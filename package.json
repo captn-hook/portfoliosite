@@ -1,0 +1,30 @@
+{
+  "name": "portfoliosite",
+  "version": "1.0.0",
+  "description": "A portfolio of my projects",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/captn-hook/portfoliosite.git"
+  },
+  "author": "Tristan Hook",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/captn-hook/portfoliosite/issues"
+  },
+  "homepage": "https://github.com/captn-hook/portfoliosite#readme",
+  "dependencies": {
+    "css-loader": "^6.7.3",
+    "three": "^0.148.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2"
+  }
+}
