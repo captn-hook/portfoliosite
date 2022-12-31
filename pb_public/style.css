@@ -46,7 +46,7 @@ li {
 .menu li:hover {
     background-color: turquoise;
     border-radius: 5px;
-    transition: 0.3s ease;
+    transition: .3s ease;
 }
 
 .menu li {
@@ -65,7 +65,7 @@ li {
     /*WITH RESPECT TO PARENT*/
     display: none;
     border-radius: 8px;
-    top: 35px;
+    top: 25px;
 }
 
 .dropdown li+li {
@@ -84,4 +84,24 @@ li {
 
 .services:hover .dropdown {
     display: block;
+}
+
+.iframeContainer {
+    text-align: center;
+}
+
+.coverLetter {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+.coverLetter > div > img {
+    width: 33%;
+}
+
+.coverLetter > p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1em 0;
 }
