@@ -2,7 +2,7 @@ import './style.css';
 
 import * as THREE from 'three';
 
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+//import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 const div = document.getElementById('3d');
 
@@ -15,13 +15,6 @@ const CAMERA = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 1, 50
 
 CAMERA.position.set(5, 5, 5); // Set position like this
 CAMERA.lookAt(new THREE.Vector3(0, 0, 0));
-
-// Controls
-const canvas2d = document.getElementById('2d');
-
-const controls = new OrbitControls(CAMERA, canvas2d);
-controls.enableDamping = true;
-controls.target.set(0, 0, 0);
 
 // Scene
 const scene = new THREE.Scene();
@@ -37,11 +30,8 @@ const renderer = new THREE.WebGLRenderer({
 
 const tick = () => {
 
-    // Update Orbital Controls
-    controls.update();
-
     // Render
-    renderer.render(scene, camera);
+    renderer.render(scene, CAMERA);
     // Call tick again on the next frame
     window.requestAnimationFrame(tick);
 }
